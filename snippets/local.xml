@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="local" fetch="file:///home/d1sover/Development" />
+	<remote name="local" fetch="file:///mnt/workspace" />
 
 	<!-- Removing unused build targets -->
 	<remove-project name="device/generic/mini-emulator-x86" />
-    <remove-project name="device/generic/mini-emulator-x86_64" />
-  	<remove-project name="device/generic/qemu" />
-  	<remove-project name="device/generic/x86" />
- 	<remove-project name="device/generic/x86_64" />
- 	<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
- 	<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
- 	<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
-  	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
-  	<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
-  	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" />
-    <remove-project name="platform/prebuilts/gdb/darwin-x86" />
-  	<remove-project name="platform/prebuilts/go/darwin-x86" />
-    <remove-project name="platform/prebuilts/ninja/darwin-x86" />
-  	<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+	<remove-project name="device/generic/mini-emulator-x86_64" />
+	<remove-project name="device/generic/qemu" />
+	<remove-project name="device/generic/x86" />
+	<remove-project name="device/generic/x86_64" />
+	<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
+	<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+	<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
+	<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" />
+	<remove-project name="platform/prebuilts/gdb/darwin-x86" />
+	<remove-project name="platform/prebuilts/go/darwin-x86" />
+	<remove-project name="platform/prebuilts/ninja/darwin-x86" />
+	<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
 	<!-- Removing unused parts of LineageOS -->
 	<remove-project name="LineageOS/android_packages_apps_Updater" />
@@ -26,8 +26,21 @@
 
 	<!-- Replacing repos -->
 	<remove-project name="LineageOS/android_frameworks_base" />
+	<remove-project name="LineageOS/android_packages_apps_Contacts" />
+	<remove-project name="LineageOS/android_packages_apps_ContactsCommon" />
+	<remove-project name="LineageOS/android_packages_apps_Dialer" />
+	<remove-project name="LineageOS/android_packages_apps_ExactCalculator" />
+	<remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+	<remove-project name="LineageOS/android_packages_apps_PhoneCommon" />
 	<remove-project name="LineageOS/android_vendor_cm" />
+
 	<project path="frameworks/base" name="LineageOS/android_frameworks_base" remote="local" groups="pdk-cw-fs,pdk-fs" />
+	<project path="packages/apps/Contacts" name="LineageOS/android_packages_apps_Contacts" remote="local" groups="pdk-fs" />
+	<project path="packages/apps/ContactsCommon" name="LineageOS/android_packages_apps_ContactsCommon" remote="local" groups="pdk-fs" />
+	<project path="packages/apps/Dialer" name="LineageOS/android_packages_apps_Dialer" remote="local" groups="pdk-fs" />
+	<project path="packages/apps/ExactCalculator" name="LineageOS/android_packages_apps_ExactCalculator" remote="local" groups="pdk-fs" />
+	<project path="packages/apps/PackageInstaller" name="LineageOS/android_packages_apps_PackageInstaller" remote="local" groups="pdk-cw-fs,pdk-fs" />
+	<project path="packages/apps/PhoneCommon" name="LineageOS/android_packages_apps_PhoneCommon" remote="local" groups="pdk-cw-fs,pdk-fs" />
 	<project path="vendor/cm" name="LineageOS/android_vendor_cm" remote="local" />
 
 	<!-- Adding lenovo blobs -->
