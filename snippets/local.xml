@@ -4,11 +4,6 @@
 	<remote name="local" fetch="file:///mnt/workspace" />
 
 	<!-- Removing unused build targets -->
-	<remove-project name="device/generic/mini-emulator-x86" />
-	<remove-project name="device/generic/mini-emulator-x86_64" />
-	<remove-project name="device/generic/qemu" />
-	<remove-project name="device/generic/x86" />
-	<remove-project name="device/generic/x86_64" />
 	<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
 	<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
 	<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
