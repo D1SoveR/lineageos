@@ -28,6 +28,7 @@
 	<remove-project name="LineageOS/android_packages_apps_ExactCalculator" />
 	<remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
 	<remove-project name="LineageOS/android_packages_apps_PhoneCommon" />
+	<remove-project name="LineageOS/android_packages_apps_Settings" />
 	<remove-project name="LineageOS/android_system_sepolicy" />
 	<remove-project name="LineageOS/android_vendor_cm" />
 
@@ -39,6 +40,7 @@
 	<project path="packages/apps/ExactCalculator" name="LineageOS/android_packages_apps_ExactCalculator" remote="local" groups="pdk-fs" />
 	<project path="packages/apps/PackageInstaller" name="LineageOS/android_packages_apps_PackageInstaller" remote="local" groups="pdk-cw-fs,pdk-fs" />
 	<project path="packages/apps/PhoneCommon" name="LineageOS/android_packages_apps_PhoneCommon" remote="local" groups="pdk-cw-fs,pdk-fs" />
+	<project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" remote="local" groups="pdk-fs" />
 	<project path="system/sepolicy" name="LineageOS/android_system_sepolicy" remote="local" groups="pdk" />
 	<project path="vendor/cm" name="LineageOS/android_vendor_cm" remote="local" />
 
