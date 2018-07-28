@@ -44,6 +44,9 @@
 	<project path="system/sepolicy" name="LineageOS/android_system_sepolicy" remote="local" groups="pdk" />
 	<project path="vendor/cm" name="LineageOS/android_vendor_cm" remote="local" />
 
+	<!-- Theme Interfacer -->
+	<project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+
 	<!-- Adding lenovo blobs -->
 	<project name="TheMuppets/proprietary_vendor_lenovo" path="vendor/lenovo" clone-depth="1" revision="cm-14.1" />
 
